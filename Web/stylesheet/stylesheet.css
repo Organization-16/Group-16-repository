@@ -1,0 +1,133 @@
+/* CSS Document */
+
+/* Set the background colours and styles */
+body {
+	background-color: #FFF;
+	background-image: url(../media/web_graphics/bg1.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-attachment: fixed;	
+	font-family: Calibri, Georgia, Times New Roman;
+	margin:0;
+	padding:0;
+}
+
+/* Set the header to extend across the window */
+.header {
+	margin: 0 auto;
+	height: 80px;
+}
+
+/* Contains the content of the header */
+.header-inner {
+	margin: 0 auto;
+	width: 1028px;
+	height: 80px;
+}
+
+/* Set the navigation to extend across the window */
+.navigation {
+	margin: 0 auto;
+	height: 45px;
+}
+
+/* Contains the content of the navigation bar */
+.navigation-inner {
+	margin: 0 auto;
+	width: 1028px;
+	height: 25px;
+}
+
+/* Get rid of the unnecessary list styles for the navigation only */
+.navigation-inner ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Set the style for the links */
+.navigation-links {
+	float: left;
+	text-align: center;
+	padding: 5px;
+	width: 100px;
+	height: 25px;
+	color: #292929;
+	font-weight: bold;	
+}
+
+/* Set the style for the links while hovered over */
+.navigation-links:hover {
+	color: #FFF;
+	background-color: #2575ba;
+}
+
+/* The bar under the navigation links */
+.navigation-bar {
+	background-color: #2575ba;
+	margin: 0 auto;
+	height: 20px;
+}
+
+/* Contains the main content of the page */
+.content {
+	background-color: #FFF;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 1028px;
+	border: solid 1px #00A3FF;
+}
+
+.content-inner {
+	margin: 5px;
+	padding: 10px;
+	border: solid 1px #00A3FF;
+}
+
+.section {
+	padding: 10px;
+	border: solid 1px #000;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Set the footer to extend across the window */
+.footer {	
+	position: absolute;
+	background-color: #1BBA37;
+	margin: 0 auto;
+	width: 100%;
+	height: 30px;
+	bottom: 0;
+}
+
+/* Contains the content of the footer */
+.footer-inner {
+	background-color: #33CB57;
+	margin: 0 auto;
+	height: 30px;
+	width: 1028px;
+}
+
+table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 1px;
+}
+
+a:link {color: #000; text-decoration: none; }
+
+a:active {color: #000; text-decoration: none; }
+
+a:visited {color: #000; text-decoration: none; }
+
+a:hover {color: #727272; text-decoration: none; }
+
+a.cl:link {color: #000; text-decoration: none; }
+
+a.cl:active {color: #000; text-decoration: none; }
+
+a.cl:visited {color: #000; text-decoration: none; }
+
+a.cl:hover {color: #044; text-decoration: none; }
