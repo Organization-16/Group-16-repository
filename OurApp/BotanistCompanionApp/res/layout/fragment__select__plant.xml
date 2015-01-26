@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.botanistcompanionapp.Fragment_Select_Plant" >
+    tools:context="uk.ac.aber.dcs.cs22120.group16.Fragment_Select_Plant" >
 
     <SearchView
         android:id="@+id/PSsearchView"
@@ -21,18 +21,18 @@
         android:id="@+id/PSlistView"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:layout_above="@+id/PSNext"
         android:layout_alignLeft="@+id/PSsearchView"
         android:layout_below="@+id/PSsearchView" >
-    </ListView>
 
-    
+    </ListView>
     
     <Button
         android:id="@+id/PSNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/PSlistView"
-        android:layout_below="@+id/PSlistView"
         android:layout_marginRight="40dp"
         android:text="Next" />
 
@@ -40,9 +40,10 @@
         android:id="@+id/PSBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PSNext"
+        android:layout_alignBottom="@+id/PSNext"
         android:layout_alignLeft="@+id/PSlistView"
-        android:layout_below="@+id/PSlistView"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="42dp"
         android:text="Back" />
 
 </RelativeLayout>
