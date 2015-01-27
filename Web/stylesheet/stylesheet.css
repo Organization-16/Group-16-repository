@@ -15,6 +15,10 @@ body {
 
 html { height: 100%; }
 
+.error {
+	color: #FF0000;	
+}
+
 .template {
 	min-height: 96%;
 }
