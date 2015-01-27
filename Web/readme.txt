@@ -32,9 +32,6 @@ file manifest:
 		- javascript.js
 	- stylesheet
 		- stylesheet.css
-	
-
-Copyright (c) 2013 Aberystwyth University. All rights Reserved
 
 
 Contact information: 
@@ -42,7 +39,7 @@ Contact information:
 					wir3@aber.ac.uk
 
 	Web builders			Thomas Wood-Hopps
-					thw7@aber.ac.uk
+					thw17@aber.ac.uk
 					Ben Pascoe
 					bep19@aber.ac.uk
 
@@ -61,3 +58,7 @@ Credits:
 	web designers and scripters	Thomas Wood-Hopps
 					Ben Pascoe
 	Database creator		John Hooper
+
+
+
+Copyright (c) 2013 Aberystwyth University. All rights Reserved
