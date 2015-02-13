@@ -1,0 +1,33 @@
+Program Structure
+
+Website
+
+The page structure of the website is setup based around the design specification created earlier on in the project; which decided what web pages would be required to cover the functionality requirements of the program as a whole - these pages however, did not provide a clear program structure due to the content in PHP being very reliant on the data stored and transferred within the database. 
+
+Before the database design and implementation was completed it was necessary to have a template of the website to have a default structure to fall back on when implementing the PHP aspect to the website. Once the PHP started to get added to the website, the core elements of the page were separated into ‘include’ files; which contained the data that would present on each web page within the website. 
+
+Each of these ‘include’ files have important roles for the structural design of the website as they contain the ‘div’s required to split the website apart into the required sections for every page. The ‘header’ include has all the ‘meta’ data for the website as well as containing the link to the CSS file - there is also a file called ‘headerdelete’ which was implemented later in the programming phase as it is required to redirect the user from the page ‘delete.php’ which just confirms the deletion of a record.
+
+Directly following the ‘header’ file is the ‘navigation’ file; which contains a small amount of code to present the navigation bar to the user - on a design outlook; this could have been contained within the ‘header’ file without any issues. The ‘footer’ include file is a simple few lines of code that contain the footer of the website while also closing all the necessary tags for the website (e.g. </body>, </html>). The last include file is the ‘connect’ file which contains all the data required for the PHP page to connect to the database.
+
+The website’s design phase was completed in the prototype through the use of the CSS that was completed for the website template; this was due to the CSS having all the necessary class names containing the styles that would be used throughout the entire website. The important parts of the CSS to consider are the ‘header’, ‘navigation’, ‘content’ and ‘footer’ which were the core components to all the web pages as they formed the overall structure of the web site as they had the default heights, widths and colour schemes.
+
+For the PHP side of the website; there are several similarities between some of the pages that use functions that require similar outputs. The first set of functions that I will talk about are the one’s that can be found on the pages ‘index.php’, ‘edit.php’ and ‘view.php’. 
+
+The function that each of these pages share is that of which they all show information of a single record; this done through a series of queries sent to the database to acquire each set of information - best described as gathering the data from each of the relevant tables: ‘Plant_Record_Table’, ‘Plant_Table’ and ‘Contacts_Table’. Both the pages ‘index.php’ and ‘view.php’ only have this function so that the user can view a single record or in the case of ‘index.php’ they will see the latest record and a certain amount of the latest added records in a table. 
+
+On the other hand, ‘edit.php’ share similar functions with ‘create.php’ as they are both centered around changing/adding information to the database. In both cases there is a function that is used to check that the data entered into the form isn’t somehow wrong or trying to provoke a reaction or unwanted change within the database. The other similar area of code that both these pages share is the PHP code required for uploading the information provided to the database; here I will go through each part of the uploading process:
+
+In the verification stage the page checks the information added isn’t incorrect or malicious and then after the checks have been performed it adds the information into variables. The variables initiated in this area of the code is key to accessing this data later to perform checks and to let the code know what it’s adding to the SQL query. 
+
+After verification is the discovery of the plant information based upon the plant name that the user has entered; this code runs an SQL query using the plant name to find the plant identification number so that it can be added to the record data and so it can be referred to at a later date - such as viewing a record on one of the other pages. 
+
+The next step is to find out if the database already contains a contact with the email address that has been provided, if there is then the contact information that is associated with that address is pulled from the database and used; if there is no such email then the contact information will be entered into the database and the contact identification number will be retrieved to add to the record. 
+
+The next stage is to check if the species and scene images have been uploaded and if they have then to upload them to the website’s filestore and to get a source reference to add to the record data so that there is knowledge as to how to obtain or present these files.
+
+The final stage is to gather all of the previous data that has been checked, uploaded and discovered and to add it to the database as a plant record under the ‘Plant_Record_Table’. It is important to note that this record data will contain three different identification numbers: ‘Record_ID’, ‘Contact_ID’ and ‘Plant_ID’; which will all be used to reference the other tables within the database to gather the information located at each of these addresses. 
+
+The last page that has yet to be mentioned is the page ‘browse.php’; which contains all the records in a table that the user can view so that they have access to the ‘view’, ‘edit’ and ‘delete’ areas of the website for each record. This page has a limited search function which can only be used to find records based on text that the user has entered; unfortunately it only searches through the plant names and not any of the other parts. 
+
+The important thing to note about the ‘browse.php’ page is that it is one of the core pages for accessing three of the other pages on the website: ‘edit.php’, ‘view.php’ and ‘delete.php’. As each record is added into the database it will appear on the browse page in the table; this then produces a series of links on each record that will allow the user to view, edit and delete the records they wish. The only other way these three pages can be access are through the index page’s table by pressing the view button and accessing the links on there for the other two pages. 

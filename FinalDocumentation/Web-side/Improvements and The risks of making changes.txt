@@ -1,0 +1,19 @@
+Suggestions for improvements
+
+Website
+
+When considering the design of a website it is important to consider all of the different types of users that will be visiting and using the website and how you can make it easy and aesthetically pleasing to use the website while also taking into consideration the functionality that is required. In this project we spent a lot of time considering the overall functionality of the website; while not all of this functionality was ‘fully’ implemented it still meant that we spent a lot more time on this than creating a more HCI based design. 
+
+One of the core issues that occurred was the fact that the database was not ready for implementation at the start of the main coding process for both the website and the application. Once it was completed for implementation and some of the functions of the website had been completed we noticed that the database was missing some extremely important links between tables and had needed some of the data types updated; making these changes took awhile as they required everyone in the group to be on the same page before implementation. 
+
+These changes meant that a lot of the features that were already implemented on the website would have to be reimplemented to match the new tables and data types. This was a long task to complete and ended up taking twice the amount of time required and resulted in missing some features that we could have implemented with the given time constraints. 
+
+Other changes I would make would be to have an account system that attaches each record to an account that can be accessed and used to find/edit/delete these records with ease; to have a better search function to search all aspects of a record and to have an easier way to access the different functions of the website. 
+
+Things to watch for when making changes.
+
+Website
+
+The main thing to look out for when making a PHP website based around an SQL database is to not make any extreme changes to the database late on in the development; this is because changes to some part of a database, such as adding extra data types and tables, cause the website to require extreme changes to the code that has already been impemented. 
+
+
