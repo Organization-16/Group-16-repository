@@ -2,7 +2,7 @@ Suggestions for improvements
 
 Website
 
-When considering the design of a website it is important to consider all of the different types of users that will be visiting and using the website and how you can make it easy and aesthetically pleasing to use the website while also taking into consideration the functionality that is required. In this project we spent a lot of time considering the overall functionality of the website; while not all of this functionality was ‘fully’ implemented it still meant that we spent a lot more time on this than creating a more HCI based design. 
+When considering the design of a website it is important to consider all of the different types of users that will be visiting and using the website and how you can make it easy and aesthetically pleasing to use the website while also taking into consideration the functionality that is required. In this project we spent a lot of time considering the overall functionality of the website; while not all of this functionality was 'fully' implemented it still meant that we spent a lot more time on this than creating a more HCI based design. 
 
 One of the core issues that occurred was the fact that the database was not ready for implementation at the start of the main coding process for both the website and the application. Once it was completed for implementation and some of the functions of the website had been completed we noticed that the database was missing some extremely important links between tables and had needed some of the data types updated; making these changes took awhile as they required everyone in the group to be on the same page before implementation. 
 
